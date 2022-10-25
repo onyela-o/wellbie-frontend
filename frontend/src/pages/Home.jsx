@@ -1,5 +1,7 @@
-import HomeImage from '../images/wellbie-home-image.png'
 import '../App.css'
+
+import HomeImage from '../images/wellbie-home-image.png'
+import Button from '../components/Button'
 
 const textStyle = {
   textAlign: 'center',
@@ -15,6 +17,10 @@ const Home = () => {
             Your personalised support to help you feel better and in control
             again.
           </p>
+          <Button>Sign up</Button>
+          <a href='/about'>
+            <Button>Learn more</Button>
+          </a>
         </div>
         <div className='column home-image'>
           <img src={HomeImage} alt='Happy and healthy people' />
