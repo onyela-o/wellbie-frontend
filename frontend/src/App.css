@@ -70,3 +70,11 @@ p {
 .column .home-image {
   height: 2px;
 }
+
+.about-column {
+  float: left;
+  width: 33%;
+  padding: 5px;
+  height: 50vh;
+
+}
