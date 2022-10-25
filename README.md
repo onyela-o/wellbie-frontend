@@ -3,7 +3,7 @@
 
 To run locally:
 
--Fork the repo
+-Fork/clone the repo
 
 -Run `npm install`
 
