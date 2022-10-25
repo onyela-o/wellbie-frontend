@@ -1,4 +1,4 @@
-# wellbie-app
+# Wellbie
 
 
 To run locally:
