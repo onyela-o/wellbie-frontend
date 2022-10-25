@@ -3,11 +3,15 @@
 
 To run locally:
 
--Fork/clone the repo
+- Fork/clone the repo
 
--Run `npm install`
+Then in terminal/command line:
 
--Run `npm start`
+- Cd to repo and run `cd frontend`
 
--Visit http://localhost:3000
+- Run `npm install`
+
+- Run `npm start`
+
+- Visit http://localhost:3000
 
