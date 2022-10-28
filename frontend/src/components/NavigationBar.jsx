@@ -31,6 +31,9 @@ const NavigationOptions = () => {
           <Link to='/register' style={linkStyle}>
             Register
           </Link>
+          <Link to='/dashboard' style={linkStyle}>
+            Dashboard
+          </Link>
           <Link to='/contact-us' style={lastLinkStyle}>
             Contact Us
           </Link>
