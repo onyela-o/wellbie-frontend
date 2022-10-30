@@ -26,9 +26,10 @@ const Card = (props) => {
   )
 }
 
-const createCard = (cardName) => {
+const createCard = (cardName, index) => {
   return (
     <Card
+      key={`about-page-card-${index}`}
       image={cardName.image}
       heading={cardName.heading}
       content={cardName.content}
