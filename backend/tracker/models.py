@@ -23,7 +23,8 @@ class Post(models.Model):
 
     category = models.CharField(max_length=100, choices=SYMPTOM_CHOICES)
     experienced_today = models.CharField(max_length=10, choices=BOOLEAN_CHOICES)
-    severity = models.IntegerField(choices=NUMERIC_CHOICES, blank=True)
+    severity = models.IntegerField(choices=NUMERIC_CHOICES, blank=True, default=0)
+    sleep=models.DecimalField(max_digits=3, decimal_places=1, default=9)
     time = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tracker_posts')
 

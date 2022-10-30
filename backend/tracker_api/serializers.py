@@ -4,5 +4,5 @@ from tracker.models import Post
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ( 'id', 'category', 'experienced_today', 'severity', 'time', 'author' )
+        fields = ( 'id', 'category', 'experienced_today',  'severity', 'sleep', 'time', 'author' )
 
