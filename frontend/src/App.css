@@ -1,7 +1,9 @@
-
-
 /* HEADER STYLES */
-
+h2,
+h3,
+p {
+  margin-left: 0.5em;
+}
 h1 {
   color: #000;
   margin-left: 1em;
@@ -16,6 +18,10 @@ h2 {
   margin-top: 1em;
   text-align: left;
   font-weight: 300;
+}
+
+h3 {
+  font-size: 3vh;
 }
 
 p {

@@ -30,6 +30,10 @@ const Pain = () => {
   return (
     <div>
       <h3>This is your personalised dashboard</h3>
+      <p style={{ fontSize: '2vh' }}>
+        You can investigate how your symptoms of pain and fatigue change over
+        time, and how they are impacted by life style factors.
+      </p>
       <a href='/dashboard/pain'>
         <Button style={{ backgroundColor: '#3d7d80' }}>
           Your pain overview
