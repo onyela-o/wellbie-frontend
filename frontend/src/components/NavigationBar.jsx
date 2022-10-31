@@ -2,7 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Title = () => {
-  return <h1>Wellbie</h1>
+  return (
+    <Link to={'/'} style={{ textDecoration: 'none' }}>
+      <h1>Wellbie</h1>
+    </Link>
+  )
 }
 
 const linkStyle = {
