@@ -22,19 +22,21 @@ const Pain = () => {
     .filter((entry) => entry.author === userID)
   const painEntries = userEntries.filter((entry) => entry.category === 'PAIN')
 
+  console.log(painEntries)
+
   return (
     <div>
       <h3>This is your personalised dashboard</h3>
       <a href='/dashboard/pain'>
-        <Button style={{ backgroundColor: '#3d7d80' }}>Pain dashboard</Button>
+        <Button style={{ backgroundColor: '#3d7d80' }}>
+          Your pain overview
+        </Button>
       </a>
       <a href='/dashboard/fatigue'>
-        <Button>Fatigue dashboard</Button>
+        <Button>Your fatigue overview</Button>
       </a>
-      <SummaryBox symptom='Pain'></SummaryBox>
-      <div>
-        <SummaryTable rows={painEntries} symptom='Pain'></SummaryTable>
-      </div>
+      <SummaryBox symptomEntries={painEntries} symptom='pain'></SummaryBox>
+      <SummaryTable rows={painEntries} symptom='Pain'></SummaryTable>
     </div>
   )
 }

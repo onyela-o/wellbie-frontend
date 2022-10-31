@@ -6,10 +6,10 @@ const Dashboard = () => {
     <div>
       <h3>This is your personalised dashboard</h3>
       <a href='/dashboard/pain'>
-        <Button>Pain dashboard</Button>
+        <Button>Your pain overview</Button>
       </a>
       <a href='/dashboard/fatigue'>
-        <Button>Fatigue dashboard</Button>
+        <Button>Your fatigue overview</Button>
       </a>
     </div>
   )

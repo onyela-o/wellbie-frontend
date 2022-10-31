@@ -9,6 +9,10 @@ import TableRow from '@mui/material/TableRow'
 import Title from './Title'
 
 export default function SummaryTable(props) {
+  const container = {
+    margin: '5em 1em',
+  }
+
   const formatDate = (entryDate) => {
     var dateToFormat = new Date(entryDate)
     var options = {
@@ -27,30 +31,32 @@ export default function SummaryTable(props) {
   }
 
   return (
-    <React.Fragment>
-      <Title>Recent Occurences of {props.symptom}</Title>
-      <Table size='small'>
-        <TableHead>
-          <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell>Was {props.symptom} experienced that day?</TableCell>
-            <TableCell>Severity</TableCell>
-            <TableCell align='right'>Sleep</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {props.rows.map((row) => (
-            <TableRow key={row.id}>
-              <TableCell>{formatDate(row.time)}</TableCell>
-              <TableCell>{row.experienced_today}</TableCell>
-              <TableCell>{row.severity}</TableCell>
-              <TableCell align='right'>{`${formatSleepHours(
-                row.sleep
-              )}h`}</TableCell>
+    <div style={container}>
+      <React.Fragment>
+        <Title>Recent Occurences of {props.symptom}</Title>
+        <Table size='small'>
+          <TableHead>
+            <TableRow>
+              <TableCell>Date</TableCell>
+              <TableCell>Was {props.symptom} experienced that day?</TableCell>
+              <TableCell>Severity</TableCell>
+              <TableCell align='right'>Sleep</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </React.Fragment>
+          </TableHead>
+          <TableBody>
+            {props.rows.map((row) => (
+              <TableRow key={row.id}>
+                <TableCell>{formatDate(row.time)}</TableCell>
+                <TableCell>{row.experienced_today}</TableCell>
+                <TableCell>{row.severity}</TableCell>
+                <TableCell align='right'>{`${formatSleepHours(
+                  row.sleep
+                )}h`}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </React.Fragment>
+    </div>
   )
 }
