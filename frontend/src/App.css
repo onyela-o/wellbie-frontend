@@ -1,3 +1,5 @@
+
+
 /* HEADER STYLES */
 
 h1 {
@@ -13,14 +15,14 @@ h2 {
   margin-left: 0.5em;
   margin-top: 1em;
   text-align: left;
-  font-weight: 300
+  font-weight: 300;
 }
 
 p {
   font-size: 5vh;
   margin-left: 0.5em;
   text-align: left;
-  font-weight: 200
+  font-weight: 200;
 }
 
 .header-nav {
@@ -64,7 +66,6 @@ p {
   width: 45%;
   padding: 5px;
   height: 50vh;
-
 }
 
 .column .home-image {
@@ -76,5 +77,4 @@ p {
   width: 33%;
   padding: 5px;
   height: 50vh;
-
 }

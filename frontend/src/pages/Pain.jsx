@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 
 import SummaryTable from '../components/SummaryTable'
 import SummaryBox from '../components/SummaryBox'
+import Chart from '../components/Chart'
 
 const Pain = () => {
   // Get entries
@@ -10,9 +11,13 @@ const Pain = () => {
 
   useEffect(() => {
     const apiUrl = 'http://127.0.0.1:8000/api/'
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((response) => setEntries(response))
+    const fetchData = async () => {
+      const data = await fetch(apiUrl)
+      const json = await data.json()
+      setEntries(json)
+    }
+
+    fetchData().catch(console.error)
   }, [])
 
   // Filter entries
@@ -21,8 +26,6 @@ const Pain = () => {
     .slice(0)
     .filter((entry) => entry.author === userID)
   const painEntries = userEntries.filter((entry) => entry.category === 'PAIN')
-
-  console.log(painEntries)
 
   return (
     <div>
@@ -35,8 +38,9 @@ const Pain = () => {
       <a href='/dashboard/fatigue'>
         <Button>Your fatigue overview</Button>
       </a>
-      <SummaryBox symptomEntries={painEntries} symptom='pain'></SummaryBox>
-      <SummaryTable rows={painEntries} symptom='Pain'></SummaryTable>
+      <Chart symptomEntries={painEntries} symptom='Pain' />
+      <SummaryBox symptomEntries={painEntries} symptom='pain' />
+      <SummaryTable rows={painEntries} symptom='Pain' />
     </div>
   )
 }
