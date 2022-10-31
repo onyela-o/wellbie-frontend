@@ -21,11 +21,11 @@ const Fatigue = () => {
     <div>
       <h3>This is your personalised dashboard</h3>
       <a href='/dashboard/pain'>
-        <Button>Pain dashboard</Button>
+        <Button>Your pain overview</Button>
       </a>
       <a href='/dashboard/fatigue'>
         <Button style={{ backgroundColor: '#3d7d80' }}>
-          Fatigue dashboard
+          Your fatigue overview
         </Button>
       </a>
       <div>
