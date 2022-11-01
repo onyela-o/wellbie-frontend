@@ -51,7 +51,7 @@ export default function Chart(props) {
                 ...theme.typography.body1,
               }}
             >
-              Most recent entry
+              Today
             </Label>
           </XAxis>
 

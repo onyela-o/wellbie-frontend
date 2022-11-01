@@ -51,7 +51,7 @@ export default function SummaryBox(props) {
 
         <Typography component='span' variant='h6'>
           {severePercentage >= 70 && (
-            <div style={{ fontSize: '2.5vh' }}>
+            <div style={{ fontSize: '2.5vh', color: 'red' }}>
               <em>
                 <b>
                   {' '}
