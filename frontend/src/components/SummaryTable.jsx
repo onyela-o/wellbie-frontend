@@ -10,7 +10,7 @@ import Title from './Title'
 
 export default function SummaryTable(props) {
   const container = {
-    margin: '5em 1em',
+    margin: '3em 1em',
   }
 
   const formatDate = (entryDate) => {
@@ -33,7 +33,9 @@ export default function SummaryTable(props) {
   return (
     <div style={container}>
       <React.Fragment>
-        <Title>Recent Occurences of {props.symptom}</Title>
+        <Title>
+          <b>Recent Occurences of {props.symptom}</b>
+        </Title>
         <Table size='small'>
           <TableHead>
             <TableRow>

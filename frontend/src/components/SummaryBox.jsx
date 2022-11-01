@@ -6,9 +6,9 @@ import { formatDate } from '../utils/dateTime'
 
 export default function SummaryBox(props) {
   const { symptomEntries } = props
-  const container = {
-    margin: '5em 1em',
-  }
+  // const container = {
+  //   margin: '5em 1em',
+  // }
 
   // Date
   function countDays(symptomEntries) {
@@ -45,9 +45,11 @@ export default function SummaryBox(props) {
   const overallSleepAverage = sleepAverage(symptomEntries)
 
   return (
-    <div style={container}>
+    <div>
       <React.Fragment>
-        <Title>Summary</Title>
+        <Title>
+          <b>Summary</b>
+        </Title>
 
         <Typography component='span' variant='h6'>
           {severePercentage >= 70 && (
@@ -67,7 +69,7 @@ export default function SummaryBox(props) {
         <Typography color='text.secondary' sx={{ flex: 1 }} component='div'>
           {severeDays.length ? (
             <div>
-              <span style={{ fontSize: '2vh' }}>
+              <span style={{ fontSize: '1em' }}>
                 {' '}
                 <em>
                   <b> You had {severeDays.length} severe days.</b>

@@ -42,8 +42,15 @@ const Pain = () => {
       <a href='/dashboard/fatigue'>
         <Button>Your fatigue overview</Button>
       </a>
-      <Chart symptomEntries={painEntries} symptom='Pain' />
-      <SummaryBox symptomEntries={painEntries} symptom='pain' />
+      <div className='row'>
+        <div className='symptom-column'>
+          <Chart symptomEntries={painEntries} symptom='Pain' />
+        </div>
+        <div className='symptom-column'>
+          <SummaryBox symptomEntries={painEntries} symptom='pain' />
+        </div>
+      </div>
+
       <SummaryTable rows={painEntries} symptom='Pain' />
     </div>
   )

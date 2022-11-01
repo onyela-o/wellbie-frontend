@@ -25,8 +25,10 @@ export default function Chart(props) {
 
   return (
     <React.Fragment>
-      <Title>Visual Summary </Title>
-      <ResponsiveContainer width='50%' aspect={3}>
+      <Title>
+        <b>Visual Summary</b>
+      </Title>
+      <ResponsiveContainer width='100%' aspect={3}>
         <LineChart
           data={data}
           margin={{
@@ -40,6 +42,7 @@ export default function Chart(props) {
             dataKey='blank'
             stroke={theme.palette.text.secondary}
             style={theme.typography.body2}
+            tick={false}
           >
             {' '}
             <Label

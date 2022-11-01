@@ -42,8 +42,15 @@ const Fatigue = () => {
         </Button>
       </a>
       <div>
-        <Chart symptomEntries={fatigueEntries} symptom='Fatigue' />
-        <SummaryBox symptomEntries={fatigueEntries} symptom='fatigue' />
+        <div className='row'>
+          <div className='symptom-column'>
+            <Chart symptomEntries={fatigueEntries} symptom='Fatigue' />
+          </div>
+          <div className='symptom-column'>
+            <SummaryBox symptomEntries={fatigueEntries} symptom='fatigue' />
+          </div>
+        </div>
+
         <SummaryTable rows={fatigueEntries} symptom='Fatigue' />
       </div>
     </div>
