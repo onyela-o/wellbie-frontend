@@ -1,17 +1,31 @@
 # Wellbie
 
 
-To run locally:
 
 - Fork/clone the repo
 
+
+
+To run the back end locally:
+
+- `cd backend`
+- Use whatever python venv manager you prefer and create a virtual environment
+
+- Install the dependencies into the virtual environment
+
+- Run python manage.py runserver to start the server at http://localhost:8000
+
+
+
+To run the front end locally:
+
+
+
 Then in terminal/command line:
 
-- Cd to repo and run `cd frontend`
+- `cd frontend`
 
 - Run `npm install`
 
-- Run `npm start`
-
-- Visit http://localhost:3000
+- Run `npm start` and visit http://localhost:3000
 
