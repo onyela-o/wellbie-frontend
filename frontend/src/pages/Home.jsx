@@ -17,7 +17,10 @@ const Home = () => {
             Your personalised support to help you feel better and in control
             again.
           </p>
-          <Button>Sign up</Button>
+          <a href='/register'>
+            <Button>Sign up</Button>
+          </a>
+
           <a href='/about'>
             <Button>Learn more</Button>
           </a>
