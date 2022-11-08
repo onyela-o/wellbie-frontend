@@ -1,14 +1,10 @@
 from select import KQ_FILTER_AIO
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.utils import timezone
 
 # Create your models here.
 class Post(models.Model):
-
-    # class UserPostObjects(models.Manager):
-    #     def get_queryset(self):
-    #         return Post.objects.all().filter(author=self.author)
 
     SYMPTOM_CHOICES = [
         ('PAIN', 'Pain'),
@@ -26,7 +22,7 @@ class Post(models.Model):
     severity = models.IntegerField(choices=NUMERIC_CHOICES, blank=True, default=0)
     sleep=models.DecimalField(max_digits=3, decimal_places=1, default=9)
     time = models.DateTimeField(auto_now_add=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tracker_posts')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='tracker_posts')
 
     objects = models.Manager() #default manager
     # userPostsObjects = UserPostObjects()
