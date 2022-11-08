@@ -5,7 +5,7 @@ const AboutHeading = styled.h3`
   text-align: center;
 `
 const Paragraph = styled.p`
-  font-size: smaller;
+  font-size: medium;
   text-align: center;
 `
 
@@ -13,7 +13,7 @@ const imageStyle = {
   display: 'block',
   marginLeft: 'auto',
   marginRight: 'auto',
-  width: '60%',
+  width: '90%',
 }
 
 const Card = (props) => {
@@ -38,7 +38,7 @@ const createCard = (cardName, index) => {
 }
 const AboutPage = () => (
   <div>
-    <h2>About Wellbie</h2>
+    <h2 style={{fontSize: '4vh'}}>About Wellbie</h2>
     <div className='row'>{aboutInformation.map(createCard)}</div>
   </div>
 )
