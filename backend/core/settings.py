@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tracker_api',
     'corsheaders',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
 ]
 
 MIDDLEWARE = [
