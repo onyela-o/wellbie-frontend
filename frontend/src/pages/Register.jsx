@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignUp() {
   const navigate = useNavigate()
-  console.log(navigate)
   const initialFormData = Object.freeze({
     email: '',
     username: '',
@@ -57,16 +56,11 @@ export default function SignUp() {
 
     console.log(formData)
 
-    axiosInstance
-      .post(`user/register/`, {
-        email: formData.email,
-        user_name: formData.username,
-        password: formData.password,
-      })
-      .then((res) => {
-        console.log(res)
-        console.log(res.data)
-      })
+    axiosInstance.post(`user/register/`, {
+      email: formData.email,
+      user_name: formData.username,
+      password: formData.password,
+    })
     navigate('/log-in')
   }
 
@@ -130,9 +124,9 @@ export default function SignUp() {
           >
             Sign Up
           </Button>
-          <Grid container justify='flex-end'>
+          <Grid container justifyContent='flex-end'>
             <Grid item>
-              <Link href='#' variant='body2'>
+              <Link href='/log-in' variant='body2'>
                 Already have an account? Sign in
               </Link>
             </Grid>
