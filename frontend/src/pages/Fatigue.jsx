@@ -20,7 +20,7 @@ const Fatigue = () => {
     fetchData().catch(console.error)
   }, [])
 
-  const userID = 2
+  const userID = 1
   const userEntries = allEntries.filter((entry) => entry.author === userID)
   const fatigueEntries = userEntries.filter(
     (entry) => entry.category === 'FATIGUE'
