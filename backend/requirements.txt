@@ -2,14 +2,17 @@ asgiref==3.5.2
 astroid @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_9fsa1cbbec/croots/recipe/astroid_1659023133872/work
 certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_0ek9yztvu3/croot/certifi_1665076692562/work/certifi
 dill @ file:///tmp/build/80754af9/dill_1623919422540/work
+dj-database-url==1.0.0
 Django==3.2.16
 django-cors-headers @ file:///home/conda/feedstock_root/build_artifacts/django-cors-headers_1654546143857/work
 djangorestframework @ file:///home/conda/feedstock_root/build_artifacts/djangorestframework_1663854154474/work
 djangorestframework-simplejwt==5.2.2
+gunicorn==20.1.0
 isort @ file:///tmp/build/80754af9/isort_1628603791788/work
 lazy-object-proxy @ file:///Users/builder/ci_310/lazy-object-proxy_1642533824465/work
 mccabe @ file:///opt/conda/conda-bld/mccabe_1644221741721/work
 platformdirs @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_7fs8_2xgrm/croots/recipe/platformdirs_1662711383474/work
+psycopg2-binary==2.9.5
 PyJWT==1.7.1
 pylint @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_e75_4ydew9/croots/recipe/pylint_1659110352634/work
 pytz==2022.6
