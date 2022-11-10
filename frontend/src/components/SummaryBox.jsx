@@ -100,7 +100,7 @@ export default function SummaryBox(props) {
           {currentDate !== mostRecentEntryTime && (
             <div>
               You have not logged your daily entry for your {props.symptom}{' '}
-              today. You can do this <a href='/'>here</a>.
+              today. You can do this <a href='/check-in'>here</a>.
             </div>
           )}
         </Typography>
