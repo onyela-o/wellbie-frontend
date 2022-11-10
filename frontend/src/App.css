@@ -38,24 +38,26 @@ p {
   overflow: hidden;
 }
 
+.user-bar {
+  float: center;
+  text-align: center;
+  padding: 0px 60px 0 0;
+  margin: 10px -1px;
+  overflow: hidden;
+}
 .nav-links {
-  color: #000000;
+  color: #5592cb;
   font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 .nav-links a:hover,
 .nav-links a:active {
-  color: #a23c9d;
+  color: #3c66a2;
 }
 
-/* .topnav {
-  margin: auto -1px;
-  overflow: hidden;
-} */
-
 #colourstrip {
-  width: 100%;
+  width: auto;
   height: 5vh;
   border-style: solid;
   border-color: #000;
@@ -69,13 +71,14 @@ p {
 
 .column {
   float: left;
-  width: 45%;
+  width: 35%;
   padding: 5px;
-  height: 50vh;
+  height: 100vh;
 }
 
 .column .home-image {
-  height: 2px;
+  height: auto;
+  width: auto;
 }
 
 .about-column {
@@ -92,4 +95,64 @@ p {
   height: 55vh;
   margin: 1.5px;
   border: 0.5px solid #3d7d80;
+}
+
+/* Form styling */
+/* Style inputs with type="text", select elements and textareas */
+input[type='text'],
+select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 20px; /* Add a top margin */
+  margin-bottom: 20px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+select {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type='submit'] {
+  background-color: #929592;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type='submit']:hover {
+  background-color: #696d6d;
+}
+
+/* Add a background color and some padding around the form */
+.form-wrapper {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-wrapper h1 {
+  margin: 20px auto;
+  font-size: 30px;
+}
+
+.form-wrapper label {
+  font-size: 20px;
+}
+
+.form-wrapper p {
+  color: red;
+  margin: 10px auto;
 }

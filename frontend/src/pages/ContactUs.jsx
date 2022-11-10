@@ -1,7 +1,11 @@
 const ContactUs = () => (
   <div>
-        <h2>This is to contact us </h2>
-        <p>Some more info here</p>
+    <p>
+      If you have any questions, comments or concerns, please email us on{' '}
+      <a href='mailto:wellbie.uk@gmail.com?subject=Feedback for Wellbie'>
+        wellbie.uk@gmail.com
+      </a>
+    </p>
   </div>
 )
 

@@ -8,14 +8,14 @@ import ContactUs from './pages/ContactUs'
 
 import SignUp from './pages/Register'
 import LogIn from './pages/LogIn'
+import LogOut from './pages/LogOut'
+import DailyCheckIn from './pages/DailyCheckIn'
 
 import Dashboard from './pages/Dashboard'
 import Pain from './pages/Pain'
 import Fatigue from './pages/Fatigue'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
-
 
 function App() {
   return (
@@ -32,6 +32,8 @@ function App() {
           <Route exact path='/contact-us' element={<ContactUs />} />
           <Route exact path='/register' element={<SignUp />} />
           <Route exact path='/log-in' element={<LogIn />} />
+          <Route exact path='/log-out' element={<LogOut />} />
+          <Route exact path='/check-in' element={<DailyCheckIn />} />
           <Route exact path='/dashboard' element={<Dashboard />} />
           <Route exact path='/dashboard/pain' element={<Pain />} />
           <Route exact path='/dashboard/fatigue' element={<Fatigue />} />

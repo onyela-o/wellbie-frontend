@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 
 const Title = () => {
   return (
-    <Link to={'/'} style={{ textDecoration: 'none' }}>
-      <h1>Wellbie</h1>
-    </Link>
+    <div>
+      <Link to={'/'} style={{ textDecoration: 'none' }}>
+        <h1>Wellbie</h1>
+      </Link>
+    </div>
   )
 }
 
@@ -32,14 +34,31 @@ const NavigationOptions = () => {
           <Link to='/about' style={linkStyle}>
             About Wellbie
           </Link>
+          <Link to='/contact-us' style={lastLinkStyle}>
+            Contact Us
+          </Link>
+        </ul>
+      </nav>
+    </div>
+  )
+}
+
+const UserOptions = () => {
+  return (
+    <div>
+      <nav>
+        <ul className='user-bar nav-links'>
           <Link to='/register' style={linkStyle}>
             Register
           </Link>
-          <Link to='/dashboard' style={linkStyle}>
-            Dashboard
+          <Link to='/log-in' style={linkStyle}>
+            Log in
           </Link>
-          <Link to='/contact-us' style={lastLinkStyle}>
-            Contact Us
+          <Link to='/check-in' style={linkStyle}>
+            Daily Check-in
+          </Link>
+          <Link to='/dashboard' style={lastLinkStyle}>
+            Dashboard
           </Link>
         </ul>
       </nav>
@@ -56,7 +75,11 @@ const NavigationBar = () => {
     <div>
       <Title />
       <NavigationOptions />
+
       <ColourStrip />
+      <div>
+        <UserOptions />
+      </div>
     </div>
   )
 }
