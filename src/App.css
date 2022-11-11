@@ -57,12 +57,13 @@ p {
 }
 
 #colourstrip {
-  width: auto;
+  width: 100vh;
   height: 5vh;
   border-style: solid;
   border-color: #000;
   background-color: #000;
-  margin-top: 40px;
+  margin-top: 40px ;
+  margin-left: 0px;
 }
 
 * {
