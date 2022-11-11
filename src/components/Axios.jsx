@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'http://squid-app-bi4mv.ondigitalocean.app/api/'
+const baseURL = 'https://squid-app-bi4mv.ondigitalocean.app/api/'
 
 const axiosInstance = axios.create({
   baseURL: baseURL,
