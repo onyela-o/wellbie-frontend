@@ -10,7 +10,7 @@ const Pain = () => {
   const [allEntries, setEntries] = useState([])
 
   useEffect(() => {
-    const apiUrl = 'https://squid-app-bi4mv.ondigitalocean.app/api/'
+    const apiUrl = 'http://squid-app-bi4mv.ondigitalocean.app/api/'
     const fetchData = async () => {
       const data = await fetch(apiUrl)
       const json = await data.json()
