@@ -14,7 +14,7 @@ const DailyCheckIn = () => {
   const navigate = useNavigate()
 
   const onSubmit = (data) =>
-    fetch('http://127.0.0.1:8000/api/', {
+    fetch('https://squid-app-bi4mv.ondigitalocean.app/api/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -10,7 +10,7 @@ const Fatigue = () => {
   const [allEntries, setEntries] = useState([])
 
   useEffect(() => {
-    const apiUrl = 'http://127.0.0.1:8000/api/'
+    const apiUrl = 'https://squid-app-bi4mv.ondigitalocean.app/api/'
     const fetchData = async () => {
       const data = await fetch(apiUrl)
       const json = await data.json()
