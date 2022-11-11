@@ -51,6 +51,9 @@ p {
   text-decoration: none;
   text-transform: uppercase;
 }
+.nav-links a:visited {
+  color: aquamarine;
+}
 .nav-links a:hover,
 .nav-links a:active {
   color: #3c66a2;
@@ -62,8 +65,7 @@ p {
   border-style: solid;
   border-color: #000;
   background-color: #000;
-  margin-top: 40px ;
-  margin-left: 0px;
+  margin-top: 40px;
 }
 
 * {
