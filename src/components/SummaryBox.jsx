@@ -82,8 +82,8 @@ export default function SummaryBox(props) {
                 extremely high (8 or higher).
               </div>{' '}
               On those days, on average, you got {severeSleepAverage} hours of
-              sleep. Overall, this was less than your average of{' '}
-              {overallSleepAverage} hours of sleep.
+              sleep. On average you get {overallSleepAverage} hours of sleep a
+              night.
             </div>
           ) : (
             <div>
